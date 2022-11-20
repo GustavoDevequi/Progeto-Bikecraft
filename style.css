@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --c12: #000;
+    --c11: #111;
+    --c10: #2E2E2E;
+    --c9: #404040;
+    --c8: #595959;
+    --c7: #717171;
+    --c6: #9C9C9C;
+    --c5: #B2B2B2;
+    --c4: #CCC;
+    --c3: #DEDEDE;
+    --c2: #EDEDED;
+    --c1: #F7F7F7;
+    --w: #FFF;
+    --p5: #332200;
+    --p4: #664400;
+    --p3: #A66F00;
+    --p2: #E4A30B;
+    --p1: #FFBB00;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+header {
+    background-color: var(--c12);
+}
+
+.header-container {
+    width: 1200px;
+    height: 96px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container img {
+    margin-top: 32px;
+}
+
+.header-container nav ul {
+    list-style: none;
+    line-height: 96px;
+    color: var(--w);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    gap: 40px;
+}
+
+.header-container nav ul li {
+    display: inline;
+}
+
+.menu-ativo {
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+}
+
+.main-titulo {
+    background-color: var(--c11);
+}
+
+.main-titulo p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--c5);
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.main-titulo h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);
+    text-transform: lowercase;
+    padding-bottom: 60px;
+}
+
+.main-titulo h1::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.main-container {
+    width: 1300px;
+    margin: auto;
+}
+
+.main-conteudo {
+    width: 1200px;
+    margin: auto;
+    margin-top: 124px;
+}
+
+.main-conteudo-container {
+    width: 760px;
+}
+
+.main-conteudo h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--c11);
+    margin-top: 48px;
+}
+
+.main-conteudo p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--c10);
+    margin-top: 20px;
+}
+
+footer {
+    background-color: var(--c12);
+}
+
+.footer-container {
+    width: 1200px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 24% 38% 38%;
+}
+
+footer h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--w);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+footer ul {
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--c5);
+}
+
+footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--c6);
+    margin-top: 80px;
+    padding-bottom: 32px;
+}
+
+.footer-contato hr {
+    width: 360px;
+    border-color: var(--c11);
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.c11{
+
+    background-color: var(--c11);
+
+}
+
+.c12{
+    background-color: var(--c12);
+}
+.c1{
+    background-color: var(--c1);
+}
+.caixa-contato{
+    height: 411px;
+}
+
+
+li.endereco:before {
+    content: "";
+    display: block;
+    background: url(imagens/icone-endereco.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+li.email:before {
+    content: "";
+    display: block;
+    background: url(imagens/email.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+li.fone:before {
+    content: "";
+    display: block;
+    background: url(imagens/fone.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.borda-esquerda {
+    border-left: 1px solid #00000038;
+}
+.secao-mapas{
+    padding-top: 340px;
+}
+.espaco-topo-contato{
+    bottom: 20px;
+}
+.topo-contato{
+    height: 350px;
+}
+.topo-orcamento{
+    height: 350px;
+    margin-bottom: 45%;
+}
+.sep{
+    Width: 16px;
+    Height: 28px;
+}
+.container-lista-bicicletas{
+    max-width: 1030px!important;
+    margin-right: 16%;
+}
+.img-bike-lista{
+    left: -266px;
+    top: 39px
+}
+.tag-preco-1 {
+    left: 483px;
+    top: 7px;
+    z-index: 99;
+}
+.tag-preco-2 {
+    left: 203px;
+    top: 46px;
+    z-index: 99;
+}
+.img-destaque{
+    width: 100%;
+}
+#btn-comprar{
+    height: 70px;
+    width: 100%;
+}
+.img-seguros-interna {
+    top: -70px;
+    max-width: 620px;
+}
+.pedale-mais{
+    margin-top: 150px;
+}
+.titulo-64{
+    font-size: 64px;
+    line-height: 72px;
+}
+.footer-bike-interna{
+    padding-top: 250px;
+}
+.radio-orcamento{
+    width: 100%;
+}
+.header-container a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.cores-componentes{
+    margin-top: 100px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+.img-cores-componentes {
+    top: 1610px;
+    max-width: 730px;
+}
+.texto-depoimento{
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-style: italic;
+}
+.espaco-footer {
+    margin-top: 70px;
+}
+.footer-interna {
+    padding-top: 260px;
+}
